@@ -24,6 +24,9 @@ class Weather:
     # Get simplified weather data for the next 12 hours:
     >>> weather1.next_12h_simplified()
 
+    Sample url to get sky condition icons:
+    https://openweathermap.org/img/wn/10d@2x.png
+
     """
     def __init__(self, apikey, city=None, lat=None, lon=None):
         """
@@ -64,6 +67,7 @@ class Weather:
         for dictionary in self.data['list'][:4]:
             weather_data.append([dictionary['dt_txt'],
                                  dictionary['main']['temp'],
-                                 dictionary['weather'][0]['description']])
+                                 dictionary['weather'][0]['description'],
+                                 dictionary['weather'][0]['icon']])
         return weather_data
 

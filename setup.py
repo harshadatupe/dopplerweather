@@ -3,7 +3,7 @@ from setuptools import setup
 setup(
     name='dopplerweather',  # Your package will have this name
     packages=['dopplerweather'],  # Name the package again
-    version='1.0.0',  # To be increased every time you change your library
+    version='2.0.0',  # To be increased every time you change your library
     license='MIT',  # Type of license. More here: https://help.github.com/articles/licensing-a-repository
     description='Weather forecast data',  # Short description of your library
     author='Harshada Tupe',  # Your name
